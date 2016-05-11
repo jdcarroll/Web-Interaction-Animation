@@ -1,0 +1,11 @@
+#instructions###
+
+1. Make sure that you are running a server.
+
+2. in order to see all the animations you have to first add a computer to the list, click on add computer and select add device. There is requirements on the form so that you can easily run through the process.
+
+3. Once the device is created and you can see it listed at the bottom f the list page click on more details to see the device specific animations.
+
+4. to see the final animation select network map to go back to the previous page and it the x button at the top right hand corner of the newly created device.  This will delete it and cause an animation to appear under the header.
+
+ 

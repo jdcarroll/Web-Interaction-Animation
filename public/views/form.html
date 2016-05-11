@@ -1,0 +1,59 @@
+
+<div class="wrapper">
+
+    <h2>Add A new Computer</h2>
+
+    <form ng-submit="onSave()">
+        <input type="text" ng-model="device.name" placeholder="Device Name"/>
+        <input type="text" ng-model="device.type" placeholder="Device Type"/>
+        <input type="text" ng-model="device.Ip" placeholder="IP Address"/>
+        <input type="text" ng-model="device.Mac" placeholder="Device Mac Address"/>
+        <input type="text" ng-model="device.connect" placeholder="ConnectionType"/>
+        <button type="submit">Add Device</button>
+    </form>
+
+    <div id="aContainer">
+        <div id="accordion">
+            <h3>Step 1 (Enroll the Device)</h3>
+            <div>
+                <h2>Enroll your Computer or Device</h2>
+                <p>Enrolling Your Computer or Device in Rebel will enable the monitor to calculate its bandwidth usage in reference to the bandwidth that Your ISP is providing<a href="">Read more</a></p>
+            </div>
+            <h3>Step 2 (Why Do I want this?)</h3>
+            <div>
+                <h2>What Good is a Network Monitor?</h2>
+                <p>
+                    The More that Rebel Knows about your Network the more accurate Rebel can be towards calculating your bandwidth usage.  Therefore when your ISP does not provide you the bandwidth which you pay them for you will have an incredibly accurate report to prove it!! <a href="">Read more</a>
+                </p>
+            </div>
+            <h3>Step 3 (How Does Rebel Work?)</h3>
+            <div>
+                <h2>How does it Work?</h2>
+                <p>
+                   The way that Rebel works is very simple. It will monitor the incoming and out going traffic trough your router and report back details about your network statics in a end user friendly way by:
+                </p>
+                <ol>
+                    <li>Monitoring Network traffic going in and out of your router.</li>
+                    <li>tying that network traffic to your registered devices.</li>
+                    <li>Finally Calculating that total network usage and cross referencing it with your provided network speeds.</li>
+                </ol>
+                <p>
+                    <a href="">Read more</a></p>
+                </p>
+            </div>
+            <h3>Step 4 (Whats the Benefit?)</h3>
+            <div>
+                <h2>Whats The Benefit?</h2>
+                <p>
+                    This question could be interpreted in many different ways but let me take a stab at it. I am going to answer it with the idea of what doe it enable me to do?
+                </p>
+
+                <p>With rebel by your side you can be monitored when your network sees slow speeds and then at the end of the month have a solid provable record that your ISP failed at providing the speeds according your contract.  With this kind of accountability the Internet Service Providing industry will be forced to change. <a href="">Read more</a></p>
+
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+<script src="js/accordian.js"></script>

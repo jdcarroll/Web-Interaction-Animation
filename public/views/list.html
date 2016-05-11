@@ -1,0 +1,56 @@
+<div id="notification" height="0">
+    <div class="wrapper">
+        <p></p>
+        <a href="#/listfdgs"></a>
+    </div>
+</div>
+
+
+
+<div class="wrapper">
+
+    <h2>Over All Bandwidth</h2>
+    <div id="overAllB">
+        <canvas id="canvas" height="250" width="400"></canvas>
+        <!--<img id="canvasImg" height="250" width="400"/>-->
+        <div id="legend">
+            <div>
+                <img src="img/average.png" alt="average bandwidth of area">
+                Average WAN Bandwidth
+            </div>
+            <div>
+                <img src="img/yourBandwidth.png" alt="average bandwidth of LAN">
+                LAN Bandwidth
+            </div><!--legend div-->
+        </div><!--legend-->
+        <p>This is an overview of your local WAN or Wide Area Network compared to you LAN network or Local Area Network. in a nutshell Wan refers to the speeds your neighbors are getting and lan refers to your speeds</p>
+
+
+    </div><!--overAllB-->
+
+
+
+    <h2>Registered Devices</h2>
+
+    <div id="CompContainer">
+
+        <div class="device" ng-repeat="device in deviceArray track by $index">
+            <div>
+                <button ng-click="removeItemAt($index)">x</button>
+                <a href="#/edit/{{ $index }}">{{ device.name }}</a> <p> : {{ device.type }}</p>
+            </div>
+            <div>
+
+                <ul>
+                    <li>Ip Address: {{ device.Ip }}</li>
+                    <li>Mac Address: {{ device.Mac }}</li>
+                    <li>Type of Connection: {{ device.connect }}</li>
+                </ul>
+                <a href="#/details/{{ $index }}">more details</a>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
